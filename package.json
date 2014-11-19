@@ -1,0 +1,31 @@
+{
+  "name": "gulp-striphtml",
+  "version": "0.0.1",
+  "description": "Strip away all html and replace with empty lines",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oxyc/gulp-striphtml"
+  },
+  "keywords": [
+    "gulpplugin"
+  ],
+  "author": "Oskar Schöldström <public@oxy.fi> (http://www.oxy.fi/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oxyc/gulp-striphtml/issues"
+  },
+  "homepage": "https://github.com/oxyc/gulp-striphtml",
+  "dependencies": {
+    "gulp-util": "^3.0.1",
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jshint": "^1.9.0",
+    "gulp-mocha": "^2.0.0"
+  }
+}

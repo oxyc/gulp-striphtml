@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fixture</title>
+  </head>
+  <body>
+    <!--
+    <script>
+      (function() {
+       var baz = "bar";
+
+       }(this));
+    </script>
+    -->
+
+    <script>
+      (function() {
+        var trapStarts = "<!--";
+        var inTheTrap = "bar"
+        var trapEnds = "-->";
+      }(this));
+    </script>
+
+    <script>
+      (function() {
+        var baz = true;
+      }(this));
+    </script>
+
+    <!-- regular script tag WITH type -->
+    <script type="text/javascript">
+      (function() {
+        var baz = "bar";
+      }(this));
+    </script>
+
+    <!-- handlebar script tag -->
+    <script type="text/x-template">
+      Hello {{userName}}!
+    </script>
+
+  </body>
+</html>
