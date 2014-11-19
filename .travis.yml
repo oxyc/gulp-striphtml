@@ -1,3 +1,10 @@
 language: node_js
 node_js:
-  - 0.10
+- '0.10'
+deploy:
+  provider: npm
+  email: public@oxy.fi
+  api_key:
+    secure: FzhAkumM3KWNonxcFMO3Na84RnOqq3hx2dnDgk5rmawOS5NQk4ubst3pb9km31USlJA3MUJuQkUW4DBJeCBGRLfzGhcWzRhjPPAne1dFnBLrbYhdnb6pWyJjZxcmvS04PIOd//3868LCeVVNL/mk6X/p/lcExd5kOqhkyiOcHjY=
+  on:
+    tags: true

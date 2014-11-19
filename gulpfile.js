@@ -7,7 +7,8 @@ var gulp = require('gulp')
 gulp.task('lint', function() {
   return gulp.src(['./{,*/}*.{js,json}', '.jshintrc'])
     .pipe(jshint({ predef: ['it'] }))
-    .pipe(jshint.reporter('default'));
+    .pipe(jshint.reporter('default', { verbose: true }))
+    .pipe(jshint.reporter('fail'));
 });
 
 gulp.task('mocha', function() {
